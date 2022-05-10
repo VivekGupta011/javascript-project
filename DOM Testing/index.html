@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>this first </li>
+        <li>this second</li>
+        <li>this third</li>
+
+    </ul>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>four</td>
+        </tr>
+    </table>
+    <script>
+        //Root node
+        // console.log(document.documentElement);
+        // console.log(document.body);
+        // console.log(document.head);
+
+        //childrens
+        // console.log(document.body.childNodes);
+        // console.log(document.body.children);
+        // console.log(document.body.firstElementChild);
+        // console.log(document.body.lastElementChild);
+
+        //if we have to use loop in that 
+        // for(node of document.body.children){
+        // console.log(node);
+        // console.log('hiii');
+        // }
+
+        // const childrensofBody=Array.from(document.body.children);
+        // console.log( childrensofBody);
+
+        //accessing sibling
+        const bodychild=document.body.children;
+        console.log("this is bdychild",bodychild);
+        const ultag=document.body.children[0];
+        console.log(ultag.nextElementSibling);
+        const firstli=ultag.children[0];
+        const secondli=ultag.children[1];
+        console.log(firstli);
+        console.log(secondli);
+
+        console.log('previous element',secondli.previousElementSibling);
+
+
+
+        // const firstli=ultag.children[0];
+        // const secondli=ultag.children[1];
+        // console.log(secondli.previousElementSibling.textContent);
+
+
+
+        // performing action on table
+        const tableTAg=document.body.children[1];
+        console.log(tableTAg);
+        const tableTag=document.body.children[1];
+        console.log('tbodies',tableTAg.tBodies[0].rows);
+        console.log(tableTAg.tBodies[0].rows[0].cells[0].textContent);
+
+
+        
+
+
+    </script>
+</body>
+
+</html>
