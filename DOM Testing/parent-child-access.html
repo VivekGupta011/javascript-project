@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="parent">
+    <h1 class="heading">
+        hello vivek!
+    </h1> 
+    <h2>this is another heading tag</h2>
+   </div>
+   <script>
+       //1.parentnode
+       const heading=document.querySelector('.heading');
+       const parent=heading.parentNode;
+       console.log(parent);
+
+       //2.childrenNode 
+       const parentt=document.querySelector('.parent');
+       console.log(parentt.childNodes);
+
+       //3.nextElementSibling
+       const parent2=heading.nextElementSibling;
+       console.log('this is NextElemntSibling',parent2);
+
+       //4.previousElementSibling
+       const parent4= document.querySelector('h2');
+       const previousElem=parent4.previousElementSibling;
+       console.log('this previousElementSibling:',previousElem);
+   </script>
+</body>
+</html>
