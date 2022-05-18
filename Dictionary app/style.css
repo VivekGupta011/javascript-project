@@ -15,3 +15,38 @@ nav.nav-container h3{
     font-family: cursive;
     padding-top: 8px;
 }
+
+.input-section h2{
+    font-family: cursive;
+    text-align: center;
+    margin: 6%;
+}
+
+.input-section input[type="text"] {
+    width: 35%;
+    height: 30px;
+    margin-left: 28%;
+    font-size: 101%;
+}
+.input-section button#mybutton {
+    background: paleturquoise;
+    border: none;
+    width: 10%;
+    height: 41px;
+    box-shadow: 1px solid paleturquoise;
+    font-family: cursive;
+    font-size: 15px;
+    margin-left: -8px;
+    margin-top: -6px;
+
+}
+
+.input-section .horizontal{
+    display: flex;
+}
+
+section.data p.def {
+    text-align: center;
+    font-size: 18px;
+    font-family: cursive;
+}
