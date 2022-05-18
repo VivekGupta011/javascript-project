@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Poppins:ital,wght@0,200;0,400;1,100&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+nav.nav-container{
+    background-color: aquamarine;
+    height: 8vh;
+}
+nav.nav-container h3{
+    margin-left: 42%;
+    font-family: cursive;
+    padding-top: 8px;
+}
